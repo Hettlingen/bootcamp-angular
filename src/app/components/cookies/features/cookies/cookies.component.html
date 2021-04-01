@@ -1,1 +1,9 @@
-<p>cookies works!</p>
+<h1>Cookies Exampel</h1>
+
+<input type="text" [(ngModel)]="inputNameOfCookie" placeholder="Name des Cookie"/>
+<input type="text" [(ngModel)]="inputValueOfCookie" placeholder="Wert des Cookie"/>
+<button (click)="actionAddCookie()">Cookie erstellen</button>
+
+<h2>Cookies List</h2>
+<div *ngFor="let cookie of getCookies()"></div>
+<button (click)="actionDeleteCookie()">Cookie löschen</button>

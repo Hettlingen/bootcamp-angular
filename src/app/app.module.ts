@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SkeletonLoadingComponent } from './components/skeleton-loading/skeleton-loading.component';
 import { CookiesComponent } from './components/cookies/features/cookies/cookies.component';
+import {CookiesService} from './components/cookies/services/cookies.service';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,9 +16,10 @@ import { CookiesComponent } from './components/cookies/features/cookies/cookies.
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CookiesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
