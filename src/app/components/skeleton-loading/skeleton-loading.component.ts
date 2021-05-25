@@ -11,5 +11,4 @@ export class SkeletonLoadingComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

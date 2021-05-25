@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {CookiesService} from '../../services/cookies.service';
 import {Cookie} from '../../cookie';
+
 
 @Component({
   selector: 'app-cookies',
@@ -18,7 +19,7 @@ export class CookiesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  actionAddCookie() {
+  actionAddCookie($event: MouseEvent) {
     const cookie = new Cookie();
     cookie.name = this.inputNameOfCookie;
     cookie.value = this.inputNameOfCookie;

@@ -2,7 +2,7 @@
 
 <input type="text" [(ngModel)]="inputNameOfCookie" placeholder="Name des Cookie"/>
 <input type="text" [(ngModel)]="inputValueOfCookie" placeholder="Wert des Cookie"/>
-<button (click)="actionAddCookie()">Cookie erstellen</button>
+<button (click)="actionAddCookie($event)">Cookie erstellen</button>
 
 <h2>Cookies List</h2>
 <div *ngFor="let cookie of getCookies()"></div>
