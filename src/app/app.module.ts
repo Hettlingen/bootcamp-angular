@@ -7,12 +7,14 @@ import {AppComponent} from './app.component';
 import {SkeletonLoadingComponent} from './components/skeleton-loading/skeleton-loading.component';
 import {CookiesComponent} from './components/cookies/features/cookies/cookies.component';
 import {CookiesService} from './components/cookies/services/cookies.service';
+import { ParallaxScrollingComponent } from './components/parallax-scrolling/parallax-scrolling.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SkeletonLoadingComponent,
-    CookiesComponent
+    CookiesComponent,
+    ParallaxScrollingComponent
   ],
   imports: [
     BrowserModule,
